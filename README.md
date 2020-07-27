@@ -6,6 +6,8 @@ simple Angular 10 CRUD application using Akita as state managment and JSON Serve
 * [Akita](https://datorama.github.io/akita/) - A Reactive State Management  for JS Applications
 * [Angular Material](https://material.angular.io/) - Material Design components for Angular
 * [JSON Server](https://github.com/typicode/json-server) - simple tool that lets you easily mock up APIs
+* [Bootswatch](https://github.com/thomaspark/bootswatch) - collection of open source themes for Bootstrap.
+
 
 
 ### Installation
