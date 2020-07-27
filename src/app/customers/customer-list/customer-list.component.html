@@ -1,0 +1,31 @@
+<h3>Customers</h3>
+<form class="form-inline ">
+  <input class="form-control col-md-11" name="searchInput" placeholder="Search Customer By Name" #searchInput="ngModel" [(ngModel)]="searchText" >
+  <button class="btn btn-success col-md-1" disabled type="button">
+    <i class="material-icons">search</i>
+  </button>
+</form>
+<table class="table table-hover">
+  <thead>
+    <tr class="table-primary " >
+      <th scope="col">Name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Address</th>
+      <th scope="col">Membership</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+   <mat-spinner *ngIf="isLoading == true " style="margin-left: 30em;"></mat-spinner>
+  <tbody *ngFor="let customer of customers$ |async">
+    <tr  *ngIf="isLoading == false && filterCustomers(customer.name)">
+      <th scope="row">{{customer.name}}</th>
+      <td>{{customer.phone}}</td>
+      <td>{{customer.address}}</td>
+      <td>{{customer.membership}}</td>
+      <th>
+        <button class="btn btn-success" (click)="editCustomer(customer)">Update</button>
+        <button class="btn btn-danger" (click)="deleteCustomer(customer.id)">Delete</button>
+      </th>
+    </tr>
+  </tbody>
+</table>

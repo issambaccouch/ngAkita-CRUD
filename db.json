@@ -1,0 +1,53 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Issam Baccouch",
+      "phone": "2020202020",
+      "address": "Kebili , Tunisia",
+      "membership": "Basic"
+    },
+    {
+      "name": null,
+      "phone": null,
+      "address": null,
+      "membership": null,
+      "id": 2
+    },
+    {
+      "name": null,
+      "phone": null,
+      "address": null,
+      "membership": null,
+      "id": 3
+    },
+    {
+      "name": null,
+      "phone": null,
+      "address": null,
+      "membership": null,
+      "id": 4
+    },
+    {
+      "name": null,
+      "phone": null,
+      "address": null,
+      "membership": null,
+      "id": 5
+    },
+    {
+      "name": null,
+      "phone": null,
+      "address": null,
+      "membership": null,
+      "id": 6
+    },
+    {
+      "name": null,
+      "phone": null,
+      "address": null,
+      "membership": null,
+      "id": 7
+    }
+  ]
+}
